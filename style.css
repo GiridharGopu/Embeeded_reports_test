@@ -1,39 +1,75 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background: #f9fafb;
+}
+
+/* Center page */
+.center {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
-.nav {
-    background: #f5f5f5;
-    padding: 10px;
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.nav a {
-    margin-right: 15px;
+.card {
+    padding: 20px 30px;
+    background: white;
+    border-radius: 12px;
     text-decoration: none;
+    color: black;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Top nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Input bar */
+.input-bar {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
 }
 
 input {
-    margin: 10px;
+    flex: 1;
     padding: 10px;
-    width: 60%;
 }
 
 button {
-    padding: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
+/* Full screen iframe */
 .container {
-    flex: 1;
-    position: relative;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
 }
 
 iframe {
-    position: absolute;
     width: 100%;
     height: 100%;
     border: none;
