@@ -8,26 +8,13 @@
 <body>
 
     <div class="nav">
-        <a href="index.html">Home</a>
+        <a href="index.html">← Back</a>
+        <span>Secure Embed (RLS)</span>
     </div>
-
-    <h3>Secure Embed (RLS Testing)</h3>
-
-    <p>⚠️ Login to Power BI required</p>
-
-    <input id="url" placeholder="Paste Secure Embed link">
-    <button onclick="loadReport()">Load</button>
 
     <div class="container">
-        <iframe id="frame"></iframe>
+        <iframe src="YOUR_SECURE_EMBED_LINK"></iframe>
     </div>
-
-    <script>
-        function loadReport() {
-            document.getElementById("frame").src =
-                document.getElementById("url").value;
-        }
-    </script>
 
 </body>
 </html>
