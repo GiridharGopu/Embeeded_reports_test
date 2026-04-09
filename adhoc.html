@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adhoc Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">← Back</a>
+        <span>Adhoc Embed Tester</span>
+    </div>
+
+    <div class="input-bar">
+        <input id="url" placeholder="Paste any Power BI embed link">
+        <button onclick="loadReport()">Load</button>
+    </div>
+
+    <div class="container">
+        <iframe id="frame"></iframe>
+    </div>
+
+    <script>
+        function loadReport() {
+            document.getElementById("frame").src =
+                document.getElementById("url").value;
+        }
+    </script>
+
+</body>
+</html>
