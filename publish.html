@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Publish to Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+    </div>
+
+    <h3>Publish to Web Testing</h3>
+
+    <input id="url" placeholder="Paste Publish to Web link">
+    <button onclick="loadReport()">Load</button>
+
+    <div class="container">
+        <iframe id="frame"></iframe>
+    </div>
+
+    <script>
+        function loadReport() {
+            document.getElementById("frame").src =
+                document.getElementById("url").value;
+        }
+    </script>
+
+</body>
+</html>
